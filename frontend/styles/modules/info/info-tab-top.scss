@@ -1,0 +1,18 @@
+.info-tab-top {
+  display: flex;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &-item {
+    &:not(:last-child) {
+      margin-right: 70px;
+    }
+  }
+}
+
+.tab-disabled {
+  color: #ccc;
+  pointer-events: none;
+}

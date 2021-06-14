@@ -1,0 +1,21 @@
+@mixin color-picker-colors{
+  @each $class-name, $bg-primary in (-blue, $primary),
+                                    (-light-blue, $light-blue),
+                                    (-black, #000),
+                                    (-yellow, #ffff00),
+                                    (-orange, $orange),
+                                    (-brown, #b26b00),
+                                    (-success, $success),
+                                    (-turquoise, $turquoise),
+                                    (-info, $info),
+                                    (-purple-link, $purple-link),
+                                    (-light-purple, $light-purple),
+                                    (-purple-pink, $purple-pink),
+                                    (-light-red, $light-red),
+                                    (-danger, $danger),
+                                    (-dark-gray, $dark-gray) {
+      .color-picker-bg-primary#{$class-name} {
+          background-color: $bg-primary !important;
+      }
+  }
+}

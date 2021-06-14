@@ -1,0 +1,28 @@
+@mixin main-colors{
+    @each $class-name, $bg-primary, $bg-secondary in (-blue, $primary, $primary-lucid),
+                                                 (-light-blue, $light-blue, $light-blue-lucid),
+                                                 (-orange, $orange, $orange-lucid),
+                                                 (-success, $success, $success-lucid),
+                                                 (-turquoise, $turquoise, $turquoise-lucid),
+                                                 (-info, $info, $info-lucid),
+                                                 (-purple-link, $purple-link, $purple-link-lucid),
+                                                 (-light-purple, $light-purple, $light-purple-lucid),
+                                                 (-purple-pink, $purple-pink, $purple-pink-lucid),
+                                                 (-light-red, $light-red, $light-red-lucid),
+                                                 (-danger, $danger, $danger-lucid),
+                                                 (-dark-gray, $dark-gray, $light-gray) {
+        .bg-primary#{$class-name} {
+            background-color: $bg-primary !important;
+        }
+        .bg-secondary#{$class-name} {
+            background-color: $bg-secondary !important;
+            text-decoration-color: $bg-primary !important;
+        }
+        .text#{$class-name} {
+            color: $bg-primary !important;
+        }
+        .border#{$class-name} {
+            border: 1px solid $bg-primary !important;
+        }
+    }
+}

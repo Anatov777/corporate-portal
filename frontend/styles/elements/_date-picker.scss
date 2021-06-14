@@ -1,0 +1,20 @@
+.date-picker {
+  position: relative;
+  width: 100%;
+  &-caret {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    transition: transform 0.3s;
+    opacity: 0.5;
+  }
+  .form-control:disabled,
+  .form-control[readonly] {
+    background-color: #fff;
+    opacity: 1;
+  }
+  .active + .arrow {
+    transform: translateY(20%) rotate(-135deg);
+  }
+}

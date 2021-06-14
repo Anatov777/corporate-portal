@@ -1,0 +1,140 @@
+@import '~styles/elements/btn';
+@import '~styles/elements/search';
+@import '~styles/elements/nav';
+@import '~styles/elements/dropdown';
+@import '~styles/elements/arrow';
+@import '~styles/elements/text';
+
+.header {
+  &__logo {
+    img {
+      max-width: 300px;
+    }
+  }
+  &__statistics {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+    padding: 6px 15px;
+    border-radius: $border-radius;
+    font-size: rem(19px);
+    position: relative;
+    &--lg {
+      font-size: rem(41px);
+      margin-left: 7px;
+      position: relative;
+    }
+    &-icon {
+      background-image: url('~@/assets/icon/statistics.svg');
+      position: absolute;
+      background-size: contain;
+      top: -10px;
+      bottom: 0;
+      left: 15px;
+      width: 145px;
+      z-index: 0;
+      height: 85px;
+    }
+  }
+  &__meeting {
+    color: $main-text-color;
+    font-size: rem(15px);
+    margin-right: 93px;
+  }
+  &__login {
+    padding: 12px 23px;
+    background-color: #fff;
+    color: $main-text-color;
+    font-size: rem(15px);
+    cursor: pointer;
+    &:hover {
+      background-color: $primary;
+      color: #fff !important;
+    }
+    &-icon.svg-icon {
+      transition: none;
+      width: 18px;
+      height: 18px;
+      margin-right: 8px;
+    }
+  }
+  &-profile {
+    background-color: #fff;
+    position: relative;
+    max-height: 45px;
+    right: 15px;
+    .header-profile__dropdown {
+      background-color: #fff;
+      width: 100%;
+      height: 0;
+      opacity: 0;
+      box-sizing: border-box;
+      transition: 0.4s;
+      border: 1px solid $gray-border;
+      border-top: none;
+      &.is-toggle {
+        opacity: 1;
+        height: fit-content;
+        z-index: 100;
+      }
+    }
+    &__item {
+      padding: 13px 18px 13px 24px;
+      transition: background-color 0.3s;
+      border-bottom: 1px solid $gray-border;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.6;
+      }
+    }
+    &__item:last-child {
+      border-bottom: none;
+    }
+    &__arrow-wrapper {
+      padding: 13px 18px 13px 0px;
+      height: 100%;
+      &:hover {
+        .arrow {
+          opacity: 0.6;
+        }
+      }
+      
+    }
+    &__name {
+      border: 1px solid $gray-border;
+      color: $main-text-color;
+      display: flex;
+      align-items: center;
+      &-text {
+        padding: 13px 0px 13px 24px;
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+      &:focus, &:hover {
+        color: $main-text-color;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: 47%;
+        transform-origin: top;
+        transform: rotate(135deg) translateY(-50%);
+      }
+      &.is-toggle {
+        &::after {
+          transform: rotate(-45deg) translateY(-50%);
+          top: 55%;
+        }
+      }
+    }
+    &__logout {
+      &:hover {
+        text-decoration: underline;
+        color: $dark-gray;
+      }
+    }
+  }
+}

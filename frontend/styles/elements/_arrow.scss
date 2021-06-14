@@ -1,0 +1,36 @@
+.arrow {
+  border: solid currentColor;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  transition: transform 0.4s;
+  &--left {
+    transform: rotate(135deg);
+  }
+  &--right {
+    transform: rotate(-45deg);
+  }
+  &--up {
+    transform: rotate(-135deg) translate(-20%, -20%);
+  }
+  &--down {
+    transform: rotate(45deg) translate(-20%, -20%);
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.arrow-after {
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border: 2px solid $main-text-color;
+    border-bottom: 0;
+    border-left: 0;
+    transition: transform 0.3s;
+  }
+}

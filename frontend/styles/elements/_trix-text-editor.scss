@@ -1,0 +1,32 @@
+.src-components-trix_container-5Bcy {
+  width: 100%;
+  @include XXS() {
+    max-width: 73.5% !important;
+  }
+}
+
+.trix-button-group.trix-button-group--file-tools {
+  display: none !important;
+}
+
+.trix-button-row {
+  &::-webkit-scrollbar {
+    height: 10px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $gray-border-second;
+    border-radius: 10px;
+  }
+}
+
+.trix-content {
+  margin-top: 5px;
+  // -moz-appearance: textfield-multiline;
+  // -webkit-appearance: textarea;
+  resize: vertical;
+  overflow: auto;
+  min-height: fit-content;
+  pre {
+    white-space: unset !important;
+  }
+}

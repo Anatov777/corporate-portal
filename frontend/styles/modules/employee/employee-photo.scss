@@ -1,0 +1,32 @@
+.employee-photo {
+  &-row {
+    margin: 0 -6px;
+  }
+  &-print {
+    cursor: pointer;
+    .svg-icon--print {
+      width: 22px;
+      height: 22px;
+    }
+  }
+  &-list {
+    display: flex;
+  }
+}
+.employee-card {
+  max-height: 469px;
+}
+@media print {
+  header,
+  footer {
+    display: none;
+  }
+  .page-content-top {
+    display: none;
+  }
+  .employee-photo {
+    &-row {
+      padding-bottom: 20px !important;
+    }
+  }
+}

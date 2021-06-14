@@ -1,0 +1,54 @@
+.file {
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  @include S() {
+    flex: 0 0 calc(50% - 6px);
+  }
+  &-item {
+    padding: 20px rem(30px);
+    display: flex;
+    border: 1px solid $gray-border-second;
+    width: 100%;
+    &-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 10px;
+      @include XXS() {
+        flex-direction: row;
+      }
+      @include XS() {
+        flex-wrap: wrap;
+      }
+      @include L() {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+
+  &-title {
+    font-weight: 500;
+    font-size: rem(22px);
+    line-height: rem(30px);
+    word-break: break-all;
+  }
+
+  &-btn {
+    min-width: 150px;
+    max-width: 150px;
+    height: 34px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    &-wrapper {
+      @include XS() {
+        margin-left: auto;
+      }
+    }
+    .svg-icon {
+      margin: 0;
+    }
+  }
+}

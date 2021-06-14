@@ -1,0 +1,11 @@
+.honor-board {
+  &-list {
+    justify-content: center;
+    @include XS() {
+      justify-content: flex-start;
+    }
+  }
+  &-main {
+    padding: 40px 0;
+  }
+}

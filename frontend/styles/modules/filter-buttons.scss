@@ -1,0 +1,19 @@
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 60px;
+  &-item {
+    padding: 6px 18px;
+    font-size: 15px;
+    line-height: 18px;
+    &:hover {
+      background: #f0f1f5;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    &.active {
+      background: #e2e5eb;
+      border-radius: 4px;
+    }
+  }
+}

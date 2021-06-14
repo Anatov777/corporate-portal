@@ -1,0 +1,31 @@
+.text {
+  color: $main-text-color !important;
+  &-underline {
+    text-decoration: underline !important;
+  }
+  &-underline-under {
+    &:hover {
+      text-decoration-line: underline;
+      text-underline-position: under;
+    }
+    &-always {
+      text-decoration-line: underline;
+      text-underline-position: under;
+    }
+  }
+  &-hover {
+    transition: color 0.3s;
+    &:hover {
+      color: black;
+    }
+  }
+  &-hover-opacity {
+    transition: opacity 0.4s;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &--sm {
+    font-size: 13px;
+  }
+}

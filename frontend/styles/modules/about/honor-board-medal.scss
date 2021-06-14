@@ -1,0 +1,66 @@
+.medal {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 44px;
+  @include M() {
+    flex-direction: row;
+  }
+  &-image {
+    max-width: 370px;
+    flex: 0 0 35%;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: #e2e5eb;
+    font-style: italic;
+    font-size: 15px;
+    line-height: 23px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 290px;
+      height: 218px;
+      bottom: 0;
+      right: -84px;
+      background-image: url('~@/assets/hands.png');
+      background-size: contain;
+    }
+    img {
+      object-fit: cover;
+    }
+    &-text {
+      margin-top: 40%;
+    }
+    &-photo {
+      background-color: #fff;
+      width: 290px;
+      @include XXS() {
+        width: 350px;
+        height: 465px;
+      }
+    }
+  }
+  &-text {
+    @include M() {
+      margin-left: 84px;
+    }
+    &-description,
+    &-description-secondary {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 30px;
+    }
+    &-description-secondary {
+      margin-top: 26px;
+      font-size: 18px;
+    }
+    &-date {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 20px;
+      margin-top: 34px;
+    }
+  }
+}

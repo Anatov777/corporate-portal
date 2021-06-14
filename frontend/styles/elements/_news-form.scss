@@ -1,0 +1,60 @@
+@import "~styles/elements/_label.scss";
+.news-form {
+  &-input {
+    width: 100%;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: $gray;
+    min-height: 30px;
+  }
+  &-reset {
+    transition: color .3s;
+    color: rgba($main-text-color, 0.5);
+    cursor: pointer;
+    &:hover {
+      color: $main-text-color;
+    }
+  }
+  &-select {
+    min-height: 30px;
+    &.multiselect--above .multiselect__content-wrapper {
+      border-radius: 0;
+    }
+    .multiselect {
+      &__tags {
+        padding: 5px 40px 0 0;
+      }
+      &__content {
+        // padding-top: 5px;
+        // padding-bottom: 5px;
+        padding: 15px;
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      &__element {
+        display: inline-block;
+        cursor: default;
+      }
+      &__option {
+        padding: 5px;
+        cursor: pointer;
+        &--selected,
+        &--highlight {
+          background-color: transparent;
+        }
+      }
+      &__single {
+        padding-left: 2px;
+      }
+    }
+    &__caret {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      transition: transform .3s;
+    }
+  }
+}

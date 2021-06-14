@@ -1,0 +1,9 @@
+.scroll-primary {
+  &::-webkit-scrollbar {
+    width: 7px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $gray-border-second;
+    border-radius: 10px;
+  }
+}

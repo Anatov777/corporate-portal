@@ -1,0 +1,11 @@
+@import "./src/styles/elements/main-news";
+@import "./src/styles/elements/news";
+.home {
+  &-content {
+    &-main {
+      .news-row {
+        margin-bottom: 100px;
+      }
+    }
+  }
+}

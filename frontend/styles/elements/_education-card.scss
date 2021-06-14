@@ -1,0 +1,14 @@
+.education-card {
+  padding: 30px 35px;
+  tr {
+    height: 50px;
+    td {
+      &:first-child {
+        width: 170px;
+      }
+      &:last-child {
+        font-weight: 500;
+      }
+    }
+  }
+}

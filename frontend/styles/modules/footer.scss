@@ -1,0 +1,40 @@
+.footer {
+  height: 150px;
+  &-wrap {
+    margin-top: auto;
+    background-color: $dark-gray;
+    color: #fff;
+  }
+  &-left {
+    p {
+      margin-bottom: 0;
+      &:not(:last-child) {
+        margin-bottom: 6px;
+      }
+    }
+  }
+  &-right {
+    &__subscribe {
+      margin-right: 25px;
+    }
+  }
+}
+
+.social-link {
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-size: 50%;
+  &--vk {
+    background-size: 55%;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+}

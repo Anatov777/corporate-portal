@@ -1,0 +1,16 @@
+.link-back {
+  &-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+  &-arrow {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,72 @@
+@import "~styles/modules/comments";
+@import "~styles/elements/post";
+@import "~styles/elements/arrow";
+@import "~styles/elements/news";
+
+.news {
+  &-item {
+    &-content {
+      &-top {
+        &__title {
+          padding-top: 30px;
+        }
+      }
+    }
+    &-go-back {
+      padding: 6px;
+      cursor: pointer;
+    }
+    &-slider {
+      $slider-offset-x: 45px;
+      padding: 0 $slider-offset-x;
+      .swiper {
+        img {
+          height: 280px;
+          object-fit: cover;
+        }
+        &-slide {
+          display: flex;
+          justify-content: center;
+          background-color: $gray-border-second;
+        }
+        &-button {
+          color: $main-text-color;
+          &-prev {
+            left: 0;
+          }
+          &-next {
+            right: 0;
+          }
+        }
+        &-pagination {
+          position: static;
+          padding-top: rem(34px);
+          &-bullet {
+            background: $main-text-color;
+            width: 12px;
+            height: 12px;
+          }
+        }
+        &.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+          margin: 0 6px;
+        }
+      }
+    }
+    &-files {
+      margin: 0 -6px;
+      margin-top: 50px;
+      gap: 12px;
+      .file {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 0.7 !important;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 38pt !important;
+}

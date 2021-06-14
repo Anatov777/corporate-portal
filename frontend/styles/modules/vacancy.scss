@@ -1,0 +1,43 @@
+@import "~styles/elements/arrow";
+@import "~styles/elements/vacancy";
+.vacancy-item {
+  &-go-back {
+    padding: 6px;
+    cursor: pointer;
+  }
+  &__date {
+    color: rgba($main-text-color, 0.5);
+    margin-right: 20px;
+  }
+  &-description {
+    margin-top: rem(60px);
+    &-item {
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+      &:last-child {
+        margin-bottom: rem(100px);
+      }
+      p {
+        line-height: 22px;
+        margin-bottom: 0;
+      }
+      &-header {
+        &-title {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 23px;
+          display: block;
+          &--bottom {
+            &-sm {
+              margin-bottom: 11px;
+            }
+            &-lg {
+              margin-bottom: 21px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

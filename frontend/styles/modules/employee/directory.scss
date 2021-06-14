@@ -1,0 +1,76 @@
+.directory {
+  &-content {
+    &-main {
+      padding-bottom: rem(80px);
+    }
+  }
+  &-table {
+    &.table {
+      th, td {
+        vertical-align: middle;
+      }
+    }
+    &-header {
+      background-color: $table-light-gray;
+    }
+  }
+  &-column {
+    &-letter {
+      padding: 10px;
+      &-data {
+        font-weight: 500;
+      }
+    }
+    &-name {
+      width: 405px;
+      &-data {
+        a {
+          font-weight: 500;
+        }
+      }
+    }
+    &-email {
+      width: 237px;
+    }
+    &-phone {
+      min-width: 530px;
+    }
+    &-name,
+    &-email {
+      &-data {
+        padding: 20px !important;
+        a {
+          color: $main-text-color;
+          transition: color .3s;
+          &:hover {
+            color: black;
+          }
+        }
+      }
+    }
+    &-phone {
+      &-item {
+        width: 166px;
+      }
+    }
+    &-room {
+      width: 121px;
+    }
+  }
+  &-phone {
+    &-label {
+      padding: 3px 10px;
+      font-weight: 500;
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+.table-bordered {
+  thead {
+    th, td {
+      border-bottom-width: 1px;
+    }
+  }
+}

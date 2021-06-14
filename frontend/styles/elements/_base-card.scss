@@ -1,0 +1,57 @@
+.base-card {
+  border: 1px solid $gray;
+  max-width: 314px;
+  @include XS() {
+    flex: 0 0 calc(50% - 6px);
+    max-width: 50%;
+  }
+  @include M() {
+    flex: 0 0 calc(33.333% - 8px);
+    max-width: 33.333%;
+  }
+  @include L() {
+    flex: 0 0 calc(25% - 9px);
+    max-width: 25%;
+  }
+  &-image {
+    height: 280px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 25%;
+  }
+  &-body {
+    padding: 20px 28px 26px 28px;
+  }
+  &-title {
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 17px;
+  }
+  &-text {
+    font-size: 13px;
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+  }
+  &-bottom {
+    padding: 27px 28px 26px 28px;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+  &-link {
+    padding: 10px 26px;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
+.btn.btn-outline-dark:hover {
+  cursor: pointer;
+}

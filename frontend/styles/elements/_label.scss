@@ -1,0 +1,19 @@
+.label {
+  padding: 2px 15px;
+  text-transform: lowercase;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: .7px;
+  color: #fff;
+  border-radius: 50rem;
+  line-height: 16px;
+  &-black {
+    color: $main-text-color;
+  }
+}
+
+.modal-label {
+  flex: 0 0 25%;
+  color: $label-gray;
+  margin-bottom: 0;
+}

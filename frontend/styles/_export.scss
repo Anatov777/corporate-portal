@@ -1,0 +1,27 @@
+@import "variables";
+
+:export {
+    legendColors:
+      $primary,
+      $light-blue,
+      $orange,
+      $success,
+      $turquoise,
+      $info,
+      $purple-link,
+      $light-purple,
+      $purple-pink,
+      $light-red,
+      $danger;
+    black: $main-text-color;
+    orange: $orange;
+    green: $success;
+    blue: $primary;
+    lightBlue: $light-blue;
+    purple: $purple-link;
+    red: $danger;
+    lightRed: $light-red;
+    warning: $warning;
+    turquoise: $turquoise;
+    brown: #b26b00;
+  }

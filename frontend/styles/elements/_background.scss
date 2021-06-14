@@ -1,0 +1,11 @@
+.bg {
+  &--grey {
+    background-color: $light-gray;
+  }
+  &--teal {
+    background-color: $teal;
+  }
+  &--light-purple {
+    background-color: #B59AFF;
+  }
+}

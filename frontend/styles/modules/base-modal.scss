@@ -1,0 +1,48 @@
+@import '@/styles/elements/close-icon';
+@import '@/styles/elements/_trix-text-editor';
+
+.modal {
+  &-extra-small {
+    max-width: 630px;
+  }
+  &-small {
+    max-width: 750px;
+  }
+  &-medium {
+    max-width: 860px;
+  }
+}
+.modal.show {
+  display: block;
+}
+
+.modal-dialog {
+  z-index: 1100;
+  width: 100%;
+  .modal-content {
+    border: 1px solid #e2e5eb;
+    box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background-clip: unset;
+    overflow-y: scroll;
+    max-height: 90vh;
+    .modal-header {
+      border: none;
+      padding: 40px;
+      padding-bottom: 20px;
+      .modal-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 26px;
+      }
+    }
+    .modal-body {
+      padding: 40px;
+      padding-top: 20px;
+    }
+    .modal-footer {
+      padding: 0 40px 40px 40px;
+      border: none;
+    }
+  }
+}

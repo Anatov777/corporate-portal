@@ -1,0 +1,28 @@
+.svg-icon {
+  fill: currentColor;
+  height: 24px;
+  width: 24px;
+  transition: 0.3s all;
+  &.effect-hover {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  &--comments {
+    color: $gray;
+    stroke: currentColor;
+    width: 20px;
+    height: 20px;
+  }
+  &--views {
+    width: 22px;
+    height: 22px;
+  }
+  &--trash {
+    width: 16px !important;
+    height: 16px !important;
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+  }
+}

@@ -1,0 +1,118 @@
+.birthdays-widget {
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+  bottom: 20px;
+  right: 0;
+  z-index: 10;
+  pointer-events: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  .birthdays-widget__icon {
+    position: sticky;
+    right: 30px;
+    bottom: 30px;
+    width: 100px;
+    height: 100px;
+    background: url('/birthday.png') no-repeat center;
+    background-size: contain;
+    pointer-events: all;
+    cursor: pointer;
+    @include S() {
+      width: 110px;
+      height: 110px;
+      right: 50px;
+    }
+    @include M() {
+      width: 120px;
+      height: 120px;
+      right: 60px;
+    }
+    @include L() {
+      width: 150px;
+      height: 140px;
+      right: 84px;
+    }
+  }
+  .birthdays-widget__content {
+    min-width: 300px;
+    max-width: 650px;
+    width: 100%;
+    max-height: 450px;
+    width: 100%;
+    overflow-y: auto;
+    position: sticky;
+    padding: 40px;
+    background: #ffffff;
+    border: 1px solid #e2e5eb;
+    box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.2);
+    pointer-events: all;
+    bottom: 100px;
+    @include S() {
+      right: 50px;
+    }
+    @include L() {
+      right: 84px;
+    }
+    .birthdays-widget__title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        margin: 0;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 16px;
+      }
+      .close-btn {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 23px;
+        height: 23px;
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          height: 23px;
+          width: 2px;
+          background-color: #dee1e8;
+        }
+        &::before {
+          transform: rotate(45deg);
+        }
+        &::after {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+    .birthdays-arrows {
+      display: flex;
+      gap: 10px;
+      z-index: 20;
+    }
+    .birthdays-date {
+      display: inline-flex;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 14px;
+      margin-left: 60px;
+      @include XS() {
+        font-size: 20px;
+      }
+      span {
+        white-space: pre-wrap;
+        color: $label-gray;
+      }
+    }
+    .person {
+      border: 1px solid #e2e5eb;
+      border-width: 0 0 1px 0;
+    }
+    .person:last-child {
+      border: none;
+    }
+  }
+}

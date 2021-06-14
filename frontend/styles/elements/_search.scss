@@ -1,0 +1,36 @@
+.search {
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    min-width: 160px;
+    border-bottom: 1px solid $light-gray;
+
+    &-input {
+        border: none;
+        background-color: transparent;
+        color: #fff;
+        font-style: italic;
+        padding-bottom: 6px;
+        font-size: 13px;
+        width: 100%;
+        @include placeholder {
+            color: #fff;
+        }
+    }
+    &-btn {
+        position: absolute;
+        right: 0;
+        background-color: transparent;
+        padding: 0;
+        top: 50%;
+        transform: translateY(-60%);
+        opacity: 0.8;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &-icon.svg-icon {
+        width: 18px;
+        height: 18px;
+    }
+}

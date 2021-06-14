@@ -1,0 +1,40 @@
+$tab-line-height: 5px;
+.tab {
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-item {
+    max-width: 155px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 10px + $tab-line-height;
+    position: relative;
+    transition: color .3s;
+    cursor: pointer;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      display: block;
+      transition: transform .3s;
+      transform: scaleX(0);
+      width: 100%;
+      height: $tab-line-height;
+    }
+    &:not(.is-active):hover {
+      color: lighten($primary, 15%);
+      &::after {
+        transform: scaleX(1);
+        background-color: lighten($primary, 15%);
+      }
+    }
+    &.is-active {
+      color: $primary;
+      &::after {
+        transform: scaleX(1);
+        background-color: $primary;
+      }
+    }
+  }
+}

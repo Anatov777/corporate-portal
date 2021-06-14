@@ -1,0 +1,19 @@
+.main-news {
+  cursor: pointer;
+  &-text {
+    margin-right: rem(78px);
+  }
+  &__title {
+    font-weight: 500;
+    font-size: rem(30px);
+    line-height: rem(38px);
+    margin-bottom: rem(48px);
+  }
+  &__link {
+    color: $main-text-color;
+    font-size: 13px;
+  }
+  img {
+    max-height: 300px; // Временно, пока не будет отдельных картинок под главную новость
+  }
+}

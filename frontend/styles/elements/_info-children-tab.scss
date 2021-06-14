@@ -1,0 +1,19 @@
+.info-children-tab-item {
+  border-radius: 4px;
+  padding: 5px 18px !important;
+  transition: background-color .3s !important;
+  &::after {
+    content: none !important;
+  }
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+  &:not(.is-active):hover {
+    color: $main-text-color !important;
+    background-color: lighten($light-gray, 1%);
+  }
+  &.is-active {
+    color: $main-text-color !important;
+    background-color: $light-gray;
+  }
+}

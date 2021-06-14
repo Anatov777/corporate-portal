@@ -1,0 +1,45 @@
+@import '@/styles/elements/close-icon';
+
+.add-typical-page {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border: 1px solid #e2e5eb;
+  box-shadow: 0px 2px 17px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  max-width: 750px;
+  width: 100%;
+  max-height: 90%;
+  z-index: 2;
+  .col-sm-9 {
+    flex: 0 0 60%;
+    max-width: 60%;
+    @include XXS() {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+  }
+  .col-9 {
+    flex: 0 0 62%;
+    max-width: 62%;
+    @include XXS() {
+      flex: 0 0 75%;
+      max-width: 75%;
+    }
+  }
+}
+
+.blackout {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background: rgba(66, 73, 95, 0.2);
+  z-index: 1;
+}
+
+.src-components-trix_container-5Bcy {
+  max-width: 75% !important;
+}

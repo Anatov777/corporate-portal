@@ -1,0 +1,208 @@
+@import '~styles/elements/education-card';
+@include main-colors;
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  @include S() {
+    flex-direction: row;
+  }
+  .profile-card__photo {
+    flex: 0 0 27%;
+    margin-bottom: 20px;
+    img {
+      max-height: 500px;
+      @include S() {
+        max-height: none;
+      }
+    }
+    
+  }
+  .profile-card__info {
+    width: 100%;
+  }
+}
+.profile {
+  &-name {
+    margin-bottom: 30px;
+  }
+  &-position {
+    font-size: 22px;
+    font-weight: 500;
+  }
+  &-division {
+    margin-bottom: 5px;
+  }
+  &-division,
+  &-department {
+    font-size: 20px;
+  }
+  &-contacts {
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 35px;
+    padding-bottom: 45px;
+    &-phone {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+    }
+    &-phone-label {
+      padding: 3px 10px;
+      font-weight: 500;
+      &:not(:last-child) {
+        margin-right: 5px;
+      }
+    }
+    .profile-details {
+      max-width: 174px;
+      width: 100%;
+      height: fit-content;
+      margin-top: 10px;
+      .profile-details__item {
+        border: 1px solid $gray-border-second;
+        padding: 10px 22px;
+        color: $black-transparent;
+        font-size: 15px;
+        line-height: 20px;
+        .profile-details__value {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 20px;
+          color: $main-text-color;
+          padding-bottom: 10px;
+          margin-top: 8px;
+        }
+        .display-permission {
+          border-top: 1px solid $gray-border-second;
+          padding-top: 10px;
+          font-size: 11px;
+          line-height: 15px;
+          .display-permission__item {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 26px;
+            cursor: pointer;
+            input[type='checkbox'] {
+              position: absolute;
+              width: 1em;
+              height: 1em;
+              opacity: 0;
+            }
+            .checkbox-control {
+              max-width: 20px;
+              width: 100%;
+              max-height: 20px;
+              width: 100%;
+              border: 1px solid $gray-border-second;
+              margin-top: 5px;
+            }
+            input[type='checkbox']:checked + .checkbox-control {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 2px 4px 6px 4px;
+              &::after {
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 10px;
+                border: 2px solid $main-text-color;
+                border-left: none;
+                border-top: none;
+                transform: rotate(45deg);
+              }
+            }
+            input[type='checkbox']:focus + .checkbox-control {
+              box-shadow: 0px 0px 5px 0px #acafb6;
+            }
+            input[type='checkbox']:focus:not(:focus-visible) + .checkbox-control {
+              outline: none;
+            }
+          }
+        }
+      }
+      .profile-details__item:not(:first-child) {
+        border-top: none;
+      }
+    }
+  }
+  &-section {
+    &-title {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+  }
+  &-information {
+    padding: 45px 0;
+    p {
+      line-height: 22px;
+      &:not(:only-child):not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &-edit-icon {
+    width: 9px;
+    height: 9px;
+    cursor: pointer;
+  }
+}
+
+.profile-education {
+  .profile-education__content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @include M() {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .profile-education__item {
+      background: $table-light-gray;
+      padding: 30px 35px 30px 35px;
+      @include M() {
+        flex: 0 0 calc(50% - 5px);
+      }
+    }
+  }
+}
+
+.profile-table {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  .profile-table__row {
+    display: flex;
+    gap: 15px;
+    font-size: 15px;
+    color: $main-text-color;
+    flex-direction: column;
+    @include XXS() {
+      flex-direction: row;
+    }
+    .profile-table__header {
+      min-width: 190px;
+    }
+    .profile-table__column {
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+.more-features {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-top: 26px;
+}
+
+.underline {
+  text-decoration-line: underline;
+}

@@ -1,0 +1,23 @@
+.page {
+  &-content {
+    &-top {
+      padding-top: $page-content-top;
+      min-height: rem(136px);
+      &-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+      }
+      &-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    }
+    &-main {
+      padding-top: 50px;
+      flex-grow: 1;
+    }
+  }
+}

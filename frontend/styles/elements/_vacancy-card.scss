@@ -1,0 +1,25 @@
+@import "vacancy";
+.vacancy-card {
+  padding: 20px 30px 30px;
+  border: 1px solid $gray;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  &__title {
+    display: block;
+    margin-bottom: 17px;
+    font-size: 22px;
+    font-weight: 500;
+    a {
+      color: $main-text-color;
+      &:visited {
+        color: lighten($main-text-color, 20%);
+      }
+      &:hover {
+        color: $primary;
+        text-decoration: underline;
+      }
+    }
+  }
+
+}

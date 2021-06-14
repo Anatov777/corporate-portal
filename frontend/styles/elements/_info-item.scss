@@ -1,0 +1,61 @@
+.info-item {
+  &-content {
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column-reverse;
+    @include S() {
+      flex-direction: row;
+      gap: 0;
+    }
+  }
+  &:not(:last-child) {
+    margin-bottom: rem(42px);
+    padding-bottom: rem(50px);
+    border-bottom: 1px solid $gray;
+  }
+  &__header {
+    margin-bottom: 26px;
+  }
+  &__title {
+    margin-bottom: 0;
+    line-height: 32px;
+  }
+  &-description {
+    line-height: 24px;
+    margin-bottom: rem(30px); // В зависимости от текста с бэка, если html параграфы, то сделать 30
+    max-height: 136px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+    &.is-toggle {
+      max-height: 100%;
+      -webkit-line-clamp: unset;
+    }
+  }
+  &-more {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    padding-right: 23px;
+    &.is-toggle {
+      &::after {
+        transform: rotate(-45deg) translateY(-50%);
+        top: 55%;
+      }
+    }
+    &::after {
+      position: absolute;
+      transition: none;
+      transform-origin: top;
+      transform: rotate(135deg) translateY(-50%);
+      top: 45%;
+      right: 1px;
+    }
+  }
+  img {
+    max-height: 250px;
+  }
+}

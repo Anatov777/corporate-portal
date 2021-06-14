@@ -1,0 +1,8 @@
+.reset-form-button {
+  transition: color .3s;
+  color: rgba($main-text-color, 0.5);
+  cursor: pointer;
+  &:hover {
+    color: $main-text-color;
+  }
+}

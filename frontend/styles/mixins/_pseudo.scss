@@ -1,0 +1,11 @@
+@mixin pseudo {
+  content: '';
+  display: block;
+  position: absolute;
+}
+
+@mixin pseudoinline {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+}

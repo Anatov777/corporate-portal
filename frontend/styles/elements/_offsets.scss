@@ -1,0 +1,38 @@
+// Padding
+$paddingOffsets: 50, 100;
+
+$offsetsY: (
+  "t": "top",
+  "b": "bottom",
+);
+@each $paddingOffset in $paddingOffsets {
+  $offsetPx: $paddingOffset * 1px;
+  @each $letter, $direction in $offsetsY {
+    $paddingClass: p#{$letter};
+    .#{$paddingClass}-#{$paddingOffset} {
+      padding-#{$direction}: rem($offsetPx) !important;
+    }
+  }
+}
+
+// Margin
+$directions: () !default;
+$directions: map-merge(
+    (
+      "t":      'top',
+      "r":      'right',
+      "b":      'bottom',
+      "l":      'left'
+    ),
+    $directions
+);
+$marginOffsets: 10, 20, 30, 40, 50, 100;
+@each $marginOffset in $marginOffsets {
+  $offsetPx: $marginOffset * 1px;
+  @each $letter, $direction in $directions {
+    $marginClass: m#{$letter};
+    .#{$marginClass}-#{$marginOffset} {
+      margin-#{$direction}: $offsetPx !important;
+    }
+  }
+}

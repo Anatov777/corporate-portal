@@ -1,0 +1,25 @@
+@mixin L(){ // large
+  @media (min-width: 1366px) {
+    @content;
+  };
+};
+@mixin M(){ // medium
+  @media (min-width: 992px) {
+    @content;
+  };
+};
+@mixin S(){ // small
+  @media (min-width: 768px) {
+    @content;
+  };
+};
+@mixin XS(){ // extra small
+  @media (min-width: 680px) {
+    @content;
+  };
+};
+@mixin XXS(){ // extra extra small
+  @media (min-width: 480px) {
+    @content;
+  };
+};

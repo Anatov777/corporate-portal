@@ -1,0 +1,29 @@
+.nav {
+  min-height: 70px;
+  &-link {
+    color: #fff;
+    padding: 0 15px;
+    &:hover {
+      color: #fff;
+    }
+    &:focus {
+      outline: none;
+      color: #fff;
+    }
+  }
+  &-item {
+    position: relative;
+    transition: background-color .3s;
+    cursor: pointer;
+    &:hover {
+      background-color: lighten($primary, 10%);
+      .dropdown {
+        background-color: #fff;
+        transform: scale(1);
+        &-link {
+          color: $main-text-color;
+        }
+      }
+    }
+  }
+}

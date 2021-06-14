@@ -1,0 +1,103 @@
+@include main-colors;
+
+.employee-card {
+  &-wrap {
+    padding: 0 6px;
+    &:not(:nth-last-child(-n + 4)) {
+      margin-bottom: 15px;
+    }
+  }
+  &-photo {
+    height: 280px;
+    background-size: cover;
+    background-position: top -40px center;
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 25%;
+  }
+  &-name {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    color: $main-text-color;
+    margin-bottom: 7px;
+    &:hover {
+      color: black;
+    }
+  }
+  &-position {
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+  &-body {
+    padding: 20px 15px 20px 25px;
+    line-height: 20px;
+  }
+  &-contacts {
+    color: $main-text-color;
+    flex-wrap: wrap;
+    gap: 10px;
+    @include L() {
+      flex-wrap: nowrap;
+    }
+    &-left {
+      span {
+        font-size: 13px;
+        font-weight: 500;
+      }
+    }
+    &-right {
+      flex: 1;
+      &-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 10px;
+        span {
+          font-size: 13px;
+          padding: 5px 10px;
+          font-weight: 500;
+          line-height: 15px;
+          min-width: 100px;
+        }
+      }
+    }
+  }
+}
+
+@media print {
+  .employee-card {
+    &-photo {
+      height: 200px;
+      background-size: contain;
+      background-position: center;
+    }
+    &-position {
+      font-size: 15px;
+      color: $main-text-color;
+      margin-bottom: 10px;
+    }
+    &-body {
+      a {
+        text-decoration: none;
+      }
+    }
+    &-contacts {
+      &-left {
+        span {
+          font-size: 15px;
+          &:last-child {
+            font-weight: 700;
+          }
+        }
+      }
+      &-label {
+        color: $main-text-color !important;
+        background: transparent !important;
+        border: 1px solid $main-text-color;
+      }
+    }
+  }
+}
