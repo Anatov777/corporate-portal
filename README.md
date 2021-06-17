@@ -59,9 +59,9 @@
 
 ![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/comments.PNG)
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/comments-add.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/comments-add.png)
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/comments-delete.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/comments-delete.png)
 
 <a name="profile"></a>
 ## Страница личного кабинета
