@@ -63,12 +63,18 @@
 <a name="profile"></a>
 ## Страница личного кабинета
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-1.png)
-
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-2.png)
-
 <p align="center">
-    <img src="https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-3.png" alt="profile-3">
+  <img src="https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-3.png" alt="profile-1">
 </p>
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-4.png)
+<p align="center">
+  <img src="https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-3.png" alt="profile-2">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-3.png" alt="profile-3">
+</p>
+
+<p align="center">
+  <img src="https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-4.png" alt="profile-4">
+</p>
