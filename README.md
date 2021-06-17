@@ -57,13 +57,11 @@
 <a name="comments"></a>
 ## Комментарии к посту
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/1.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/comments.PNG)
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/2.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/comments-add.PNG)
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/3.PNG)
-
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/4.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/comments-delete.PNG)
 
 <a name="profile"></a>
 ## Страница личного кабинета
