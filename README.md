@@ -1,3 +1,8 @@
+img[src$="centerme"] {
+  display:block;
+  margin: 0 auto;
+}
+
 # Примеры выполненных задач над корпоративным порталом
 
 1. [Добавление/редактирование новостей и событий](#news)
@@ -70,8 +75,3 @@
 ![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-3.png)
 
 ![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-4.png)
-
-img[src$="centerme"] {
-  display:block;
-  margin: 0 auto;
-}
