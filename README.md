@@ -13,7 +13,6 @@
   <img src="https://github.com/Anatov777/corporate-portal/blob/main/images/news/news-page.png" alt="news-page">
 </p>
 
----
 ### Форма добавления новости
 <p align="center">
   <img src="https://github.com/Anatov777/corporate-portal/blob/main/images/news/news-add-1.png" alt="news-add-1">
