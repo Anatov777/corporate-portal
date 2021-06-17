@@ -67,8 +67,11 @@
 
 ![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-2.png)
 
-<p align="center"> 
 ![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-3.png)
-</p>
 
 ![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-4.png)
+
+img[src$="centerme"] {
+  display:block;
+  margin: 0 auto;
+}
