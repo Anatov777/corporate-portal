@@ -1,7 +1,9 @@
+<style>
 img[src$="centerme"] {
   display:block;
   margin: 0 auto;
 }
+</style>
 
 # Примеры выполненных задач над корпоративным порталом
 
