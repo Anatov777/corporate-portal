@@ -1,4 +1,4 @@
-<style>
+<style type="text/css">
 img[src$="centerme"] {
   display:block;
   margin: 0 auto;
