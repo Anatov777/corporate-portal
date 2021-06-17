@@ -1,11 +1,12 @@
-<head>
-<style type="text/css">
-img[src$="centerme"] {
-  display:block;
-  margin: 0 auto;
+<style>
+img
+{
+    display:block; 
+    float:none; 
+    margin-left:auto;
+    margin-right:auto;
 }
 </style>
-  </head>
 
 # Примеры выполненных задач над корпоративным порталом
 
