@@ -9,55 +9,52 @@
 <a name="news"></a>
 ## Добавление/редактирование новостей и событий
 ### Страница новости
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news_view.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news-page.png)
 
 ---
 ### Форма добавления новости
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news_add_1.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news-add-1.png)
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news_add_2.PNG)
-
-### Форма редактирования новости
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news_edit.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news-add-2.png)
 
 ### Добавление галереи и файлов к посту
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news_gallery_1.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news-gallery.png)
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news_files.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news-files.png)
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news_gallery_2.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/news/news-attachments.png)
 
 <a name="info-blocks"></a>
 ## Добавление/редактирование информационных блоков
 ### Страница с блоками информации
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/infoblocks/info.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/infoblocks/info-page.png)
 
 ### Форма редактирования раздела
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/infoblocks/tab_edit.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/infoblocks/tab-edit.png)
 
 ### Форма редактирования блока
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/infoblocks/block_edit.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/infoblocks/block-edit.png)
 
 ### Филтрация по меткам
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/infoblocks/tags.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/infoblocks/tags.png)
 
 <a name="departments"></a>
 ## Отображение отделов и сотрудников в них
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/departments/departments_1.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/departments/departments-1.png)
 
 ---
 ### Список сотрудников отдела
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/departments/departments_2.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/departments/departments-2.png)
 
 ---
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/departments/departments_3.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/departments/departments-3.png)
 
 <a name="comments"></a>
 ## Комментарии к посту
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/comments.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/comments.png)
 
 ![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/comments/comments-add.png)
 
@@ -66,10 +63,10 @@
 <a name="profile"></a>
 ## Страница личного кабинета
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile_1.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-1.png)
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile_2.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-2.png)
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile_3.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-3.png)
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile_4.PNG)
+![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-4.png)
