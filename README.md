@@ -64,11 +64,11 @@
 ## Страница личного кабинета
 
 <p align="center">
-  <img src="https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-3.png" alt="profile-1">
+  <img src="https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-1.png" alt="profile-1">
 </p>
 
 <p align="center">
-  <img src="https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-3.png" alt="profile-2">
+  <img src="https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-2.png" alt="profile-2">
 </p>
 
 <p align="center">
