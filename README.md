@@ -77,6 +77,6 @@ img
 
 ![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-2.png)
 
-![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-3.png)
+-> ![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-3.png) <-
 
 ![alt text](https://github.com/Anatov777/corporate-portal/blob/main/images/profile/profile-4.png)
